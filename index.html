@@ -1,23 +1,137 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ThreeCubeTech</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>TripleCubeTech</title>
+    <link rel="stylesheet" href="css/main.css">
+    
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
 </head>
 <body>
-    <nav class="navbar navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">
-          ThreeCubeTech
-        </a>
-      </nav>
+  <div class="navbar">
+    <div class="container">
+        <a class="logo" href="#">TripleCube<span>Tech</span></a>
 
-      <div class="jumbotron">
-        Whether you create technology products or use them to implement business solutions for your company, all technical leaders confront the complexities brought on by rapidly evolving technologies and business models, shorter deadlines, and limited resources. They must work through multiple obstacles in order to deliver innovation.
+        <img id="mobile-cta" class="mobile-menu" src="images/menu.svg" alt="Open Navigation">
 
-From core development, testing and DevOps, to making data digitally available, or migrating to the cloud, your infrastructure is in a state of constant flux. Whether it’s integrating new applications and technologies; modernizing software products to extend availability; or reformatting apps to be sold through new channels, the complexity keeps increasing. And, in the midst of all this change, you’re tasked with transforming old ways of working and delivering products, while introducing modern methods, frameworks, and technologies.
-      </div>
+        <nav>
+            <img id="mobile-exit" class="mobile-menu-exit" src="images/exit.svg" alt="Close Navigation">
+            
+            <ul class="primary-nav">
+                <li class="current"><a href="#">Home</a></li>
+                <!-- <li><a href="#">Features</a></li>
+                <li><a href="#">Pricing</a></li> -->
+            </ul>
+
+            <ul class="secondary-nav">
+                <!-- <li><a href="#">Contact</a></li> -->
+                <li class="go-premium-cta"><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+<section class="hero">
+    <div class="container">
+        <div class="left-col">
+            <p class="subhead">The Engineering Knowledge-smiths</p>
+            <h1>Navigate Complexity. Deliver Innovation.</h1>
+
+            <!-- <div class="hero-cta">
+                <a href="#" class="primary-cta">Try for free</a>
+                <a href="#" class="watch-video-cta">
+                    <img src="https://assets.codepen.io/2621168/watch.svg" alt="Watch a video">Watch a video
+                </a>
+            </div> -->
+        </div>
+        <p class="brief">Whether you create technology products or use them to implement business solutions for your company, all technical leaders confront the complexities brought on by rapidly evolving technologies and business models, shorter deadlines, and limited resources. They must work through multiple obstacles in order to deliver innovation.
+
+          From core development, testing and DevOps, to making data digitally available, or migrating to the cloud, your infrastructure is in a state of constant flux. Whether it’s integrating new applications and technologies; modernizing software products to extend availability; or reformatting apps to be sold through new channels, the complexity keeps increasing. And, in the midst of all this change, you’re tasked with transforming old ways of working and delivering products, while introducing modern methods, frameworks, and technologies.</p>
+        <!-- <img src="https://assets.codepen.io/2621168/illustration.svg" class="hero-img" alt="Illustration"> -->
+    </div>
+</section>
+
+<section class="features-section">
+    <div class="container">
+        <ul class="features-list">
+            <li>Secure Your Workplace Environments</li>
+            <li>Big Data, AI and ML</li>
+            <li>Application Lifecycle Management</li>
+            <li>Product Modernization</li>
+            <li>X·CELERATE Invoice</li>
+            <li>Regulatory, Risk and Compliance</li>
+        </ul>
+
+        <img src="https://assets.codepen.io/2621168/holding-phone.jpg" alt="Man holding phone">
+    </div>
+</section>
+
+<section class="testimonials-section">
+    <div class="container">
+        <ul>
+            <li>
+                <img src="https://images.cdn1.stockunlimited.net/preview1300/processor-on-circuit-board-design_1646959.jpg" alt="Person">
+                <h1>Product
+                  Modernization</h1>
+                <blockquote>Modernization means leveraging the technologies of tomorrow to deliver improved functionality, greater efficiencies in maintenance, new business models. Explore the 6 Stages of Modernization ISVs should adopt!</blockquote>
+            </li>
+            <li>
+                <img src="https://graphicriver.img.customer.envatousercontent.com/files/282641877/cyberShield_Preview.jpg?auto=compress%2Cformat&fit=crop&crop=top&w=590&h=590&s=7772e7614f2bf6d7175701aa1d035f65" alt="Person">
+
+                <h1>Secure Your
+                  Workplace Environments</h1>
+                <blockquote>The threat environment companies face today is increasing in scope and complexity. Leading organizations have begun to implement an entirely new working environment – the digital workplace. Make security part of your organizational DNA and minimize security exposure.</blockquote>
+                <!-- <cite>- Jane Doe</cite> -->
+            </li>
+            <li>
+                <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw0QDQ4NDQ0QDw0QDw8PEA8PDhANDw8PFRUWFhURFRUYHCgsGholHRYVITEiJykrLi4uFyEzODY4OSgwLisBCgoKDQ0OFw8PGTAdFRkrKystLS0yKzAvKysrKystMS4vLS0tLTA3Ky0tLS0tLS0uLisrNS0tLS03KystNzcrK//AABEIANUA7QMBIgACEQEDEQH/xAAcAAACAgMBAQAAAAAAAAAAAAAAAgEFAwYHBAj/xABBEAABBAEBBQUDCAgGAwEAAAABAAIDEQQSBRMhMVEGFCJBYQdxgTJSVJGSk7HSFRYXI1NyodEkNEKCwvBDYqIz/8QAGwEBAQADAQEBAAAAAAAAAAAAAAECAwQGBQf/xAArEQEAAQMBBgUEAwAAAAAAAAAAAQIDEQQUMTJRcZEhYYGx0UFSU/AFEjP/2gAMAwEAAhEDEQA/AOVIQhGQQhCAQhCAQhCAQilNIiEJqRSBaU0mpFIFpFJqRSBKRSekUgRCakUgVCmlCKEIQgEIQgEIQgEIQgEIQgEIQgEIUgIIpTSakUiCkUmAUgIFpTSakUgWlNJqRSBaRSakUgWlFJ6UUgWlFJ6UUgSlBCelBCBCFCelBCBUIIQihCEIBCEIBCEIBCFICIAEyFICAATAICmkBSkBSAppBFKaU0ij5Cz5AcyeiC07O9nczaE24w4tbgAXvcdEUTTyL3Vw9wBJo0OC6ThexMaP8RtE6z5Q44DW+lud4vfQXQexXZ+PZ+BDjMA3mkPneBxkncBqcfwHQAK9RHA+03snz8VjpsaRubE0EuayMxZDR6R2dfwN9AtIwNn5GQ/d40Ek76vTFG6QgdTQ4D1K+s15cHZ2PBvNxCyLeyOlk0NDdcjubnVzKD5e2nsLOxQDlYk8DSaDpInNYT01cr9LVdS+t8rHjljfFKxskb2lr2PAc1zTzBBXzT267P8A6P2jPjNDtwSH47nWbicAdNnmWklvwBPNFa7SKTUikGOlFLJSUhAhCik6ghBjKghOQoKBEKSFCKEIQgEIQEEgJgoCYIgATBAUhBICkBATBAKaQAmAQRSyQSBj2SEWGOa8jqGkGv6JaXVvZJ2OgkiG08yNsup7m40bxqY0MNGVzTzOoEDppvzFB1zHnbIxkjCHMe1r2kcQWuFg/UVktYQ9GtEZrRaw60a0Ga14dtbJx8zHfjZMYfE8Vx+U13k9p8nDyK9GtG8QfK20cMwZE+O426GaWEnlZjeWk/0XlIWze0HYz8PamQxzi9szjlRvPNzJXOJv1DtQ+F+a1ykVjUJyFCBCEpTqCECEJSnKUoEKUpylKCEIQihSFCYIiQmCgJggkLYNgdjdqZzRJi4jnQnlM8thiP8AKXEaveLVp7Keyse0c9xyG6sTFa2WVnlI9xIjjP8A6nS8n+WvNfRTGgANaAGgAAAUAByACD5t2r7PNs4zDJJhmSMAlxge2ctHq1pv6gtYC+ulrcvYXZT852fJisfM4C2OAdBvAbMu75F54cT0vnZRHzU0g8iCmX1FtTs5s/JiMORiQvYRQ/dta5nqxwotPqCF89ds+z52dtCXD1F7AGyxONanQvvSXV5ghzT1Lb9EFGAu8+znaLH7IxA08Y2uhePMPa48/eCD/uC4QArvs12jyMGRxj8cT63kTjTXVycD5O9f+gPoHvI6o7yOq5pH7RsUjxRzNPmNLXf1Dk37RMT5s32G/mVHSe8jqjvI6rnMXtAxnOaxrJi5zg1o0N4uJoD5XVE3b/GY90b2TB7HOY4aGmnNNEfK6hEdG7yOqO8jqubftExPmzfYb+ZePaPtIboIxYXGQjg6Wmsb60DZ93BFeT2x5rJM6CNvF0OP4/QvcSGn1oA/7gtBK9GVPJLI+WV5fI9xc57ubnHzWEhQYytl2R2A2xlMEkWG5kZFtfM5sAcOoDjdetUto9jfZSLIkk2jksD44HiOBjhbXTgBzpCPPSC2vUnzaF2tB8y7d7E7VwmGXJxHblot0sbmzRtHVxabaPUgBa6V9dkAijxB8lrWzewWycfJlymYjHSSP1tEgEkcHDiImEUwXZ68a5UAHzNYPIg+7ioK+oe0XY7Z2dE6OfGY19EMnjY2OaI+Ra4D3cDYPmF82ba2bJiZeRhykGSCR0biOAcBxa8DyBaQ6vVFV5UFMUpQIUKSoQATBKE6CQmCgL37D2ZJl5cGJEQHzSBgceIaObnn3NBPwQdV9gGQzRtGH/yh+PJ6lhD2j6i0/aC65aouzfZ/C2fCIcSJrTQ1ykAzTO+c93n7uQ8lb7xEZrRaw7xG8QZrVP2l7N4e0IXRZMbS7SRHMAN7E7yc13v8uR81ZbxG8QfLOZjOimlgfWuKSSJ1ctTHFpr4hY1fdu9kPxNp5MT36xI85LHngXslc51kdQ7U3/aqEKqkKaQEwURlwq30RL92N7HcnAaBqHj49OfwU7RrfzkP3gM0pEnA7wajT+HDjz4dU+z738Oloe7exU0mg46hTSfIHkp2nfecjU0Mdv5tTAdQYdZtoPmByQeOlBTFKUClQUxV12N2AdoZ8eMXFsVGSZw5tibV16kkAe+/JVXWfYtOx2yNDSNUeTM148wTTx/RwW+2q3ZWz8bFiEGLCyGIf6WCrPznHm4+p4r2bxRGa0WsO8RvEGa1qPtC7HYu0MSZ+7a3Njjc+GdoDXlzRYjef9TTVUeV2OS2jeLFkjXG+PUW62OZqbWpuoEahfmLQfJQNi+vFKV79s7MfiZU+HIQXwSGMkcA4Di146AtLT8V4SilKVMUqACdIE4QMFsPYDaDMfa2HNIQGa3Mc48m7xjmB31uC10JkH1L3sdUd7HVcJ2J2/zceNsUgbkMaAGl7i2QAchq42PeL9VaftOl+iN+/P5VUdi72OqO9jquOn2nTV/k2/fn8q9e0faKY5pI4YmzRNIDJRKWh4oG609bHwQdX72OqO9jquQftLl+iN++P5V5s/2h5kjC2GNkBPDXqMjx/LYAB+BQP7VtoMm2mGsIO4gZE8j+Jqc8j4Bzfja04ILiSSSSSSSSbJJ4kk+ZVjsXEbJIA8kMHFxHOug9Sg8ICYA9D9S6bs7Z+M8aYsCEhvAvle/n6knifcrJuxGfQsL7x/8AddM6S7G/w9YcUfyFieGZmPKJ+HJ8MASxFxc1m8YXObYc1uoW4V5gcVOeAZ5iwuewyyFr3WXPbqNOJPmRxXXG7Gb9Dw/vXf3WRuyB9DxPvXLHZq/LvC7da8+0/Di5Yeh+opSx3zT9RXcWbJH0XF+EjlE+DE0U/FjAPJzHO/EFTZ6/2YZRrLX1zHpLhi3L2UbQZDtIteQN/A+JhPz9TXgfENKy9stjxCN8zBT2UboAubdFrupHVaO1xBBBIcCCCDRBHIg9VpdUeL6X72OqO9jquLYHtDzI2Bk0bJyBWvUY3n+agQT8AvT+0uX6I374/lQdg72OqO9jquTYHtHL54Y5oWwxPkYySYzEiJhcA6QjTyAs/BeVvtOmoE4bQa5b88P/AJQdj72OqnvYXHP2nS/Q2/fn8qqtt9v83IjdFGG47HAhxY4ukcDzGrhQ9wv1QV/b3PZkbXzp4iDG6RjGuHJ26jZEXeoJYePSlr5TJSopSlTFKgAmCVSEDhMEgTBA4TBIEwQS/kfcVcdqDL3/ACd8xjJdbdbY3FzGnQ35JIF8K8lTO5GuhVlt50Xe5tyZN1qGjfa97WkfK18bu+aDxhMFj1DqmDh1CDIFc9nvlj3t/FUYcOqvOzvyx72/itlrjp6w06j/ACr6T7NxikcAACR7iszch/zj9a8zfJZAvVzEPzj+0xul7YsyTqvbFku6qqi5qwhXPcpjk69NdrnfKwjmd1WcyEtIK8kS9DeS5aoh9eiqcNV7Yf5bJ/l/5Bc0JXS+2H+Wyf5f+QXMS4dQvi3OKXp7XBT0hJUFQXDqoLh1HHksGxY9mzJ+kMLctY+XvePu2yOLY3P3jdLXEA026s0VUxVpbXLSOfuVhsR0XfMXel+67xDvNzr3ujWNWjR4tVXWnjfLiq9l6RfOhy5IJKUqSlKCClKkqCgUqEFCAQEIRThSEgTBEOEwKQFMgb0Vt+sedvHzHIuWRjY3vdFC4uY29I4t9Tx5qoBTILKPbeUGwMEo0Y5BhG6hOggEA3p8XAnnac7cyzv7mH+I/wD2/dQ+Pw6Pm+Hhw4UqtSCgtf0/maon74aoWubEdzB4GkAEVo48AOdr3bEmdJMZHm3vfqcaDbcXEk0OA+C10FXvZ5wDgT1H4rZanFdPWGq/GbdURyn2bg3yWQLGxZAvVy/NZZYuasIVXxc1YQrTcdWmeyJehvJeeJegHguOp9i3uav2rkcyCd7TTm05poGnBzSDR5rQv1hzd4+XfDeSMax53MHiY26FaKHM8Qt57YOBxck+Wn/kFzElfFr4peptRiiOkLBu2soNgYJRpxyDCN1CdBALQb0+LgT8q1D9uZZE4MwrIFTfuofGNOn5vh4cPDSr7ULBsWje0WcHwytnqSAFsLhFCDGCADXg4mgOJsqoAoUPgpJSkoAqCUFKUEFQUFKUAhCEUIQhAJgUqEQ6YFICpCDIpBSAqbQOCptJakFA9rYtjbD2i5okixJXMPJwA/qCVrsb6cDV0Qa60eS3rF7VN0NAl00OROlEeyDZ21AAO5y/EArMcPaDQXOxJAACT4QeAXi/Wofxx9sKf1qH8cfbC3xqL0RiK5x1ctWi01U5m3TMz5Qxs2y3qP8AvwWZu2o/Nw/r/ZUOecSVxe2YROJs6XNLSetf2UYHdInB7phK4Gxqc0NB615/FXab33z3TYNL+OntDfMdmYWtc3Hk0kAg6DxB4g8l6NGYRRgl+DD/AGWsfrUP44+2FH61D6Q37YWM3rk76pZ06azT400RHpDF2wh2g6ItGHMyAEF8jgBqriAGg3Xn8FotresntW3Q4GbVYqgdS0WV4LnOAq3E10s8lqdEItQSoJUWootQUEpSUASoQlJQBKhCEUIQhAIQhAIQhAJgUqEQ9qbSAqQUD2ptJam0D2ptJaLQPam0lotA9otJaLQPai0totBNotLai0DWoJUWotBNpbRaW0EkqEIRQhCEAhCEAhCEAhCEAhCEAhCEE2ptKhENam0iLQPam0lotA9otJaLQPai0totAyi0toQTai0IQCEIRQhCEAhCEAhCEHm3h6o3h6qYZXMeyRtamOa9uoW3U0gix5iwtl07MEb4w5rvG6ZosAtjlDqjDnSMAexrYAflU4uFHit2I5MGs7w9UGU+Z/BbDGcQb+M913LpI3QneP1PY1s273h1W0l74tXI0X+TeGXZmTjwzYz4mYhnPeDOXZJiijJia1oilJLWHxFwdRp4IBoUmI5DWRKfI/gjeHqt7z59nSsDRLiTzMM7mHKl0NdkPbjHRJJFuw+MAZAElNDnxtv5VHFH+ho8hjozC7A0bRZO8TPOfqdDlMZHE2R1FhaYgx2my4izanhyGlbx3VRvHdV79tT3K+FhhMEcr90cfUYiw8i0uJJFVzN874quVxBk28d1RvHdUqExBk28d1RvHdUqExBk28d1RvHdUqExBk28d1RvHdUqExBk28d1RvHdUqExBk28d1RvHdUqExBk28d1RvHdUqzYjI3SxtlcWRucGueP9APDXy5DmfQFMQZY947qjeO6q5dsvAu27RGkkU0xt1iy5vEl46Anw8ndAXJ4dlbP1aX7Q1WOD2MZE1nFvEgucXkgmmiuXEjjpYgUe8d1RvHdVcxbKwq8e0mWYwabEBpkINA+M2LAHDrx0+ePH2XiFmqTaLGO0BxYIRIdVG2D94LoiroXz5USxAqt47qjeO6q6i2Xg6ntOaHinaX648QE+ANsOD+Fl5NG9LQQCeByfo7Zdu/xb+BnoCSMENbp3dO0EPJs8jx9NJtiBQ7x3VG8d1VttHEwGtl7vM972guaXTRFrgZI2hmkMFvAMpOlxHhaRwNKnTEAQhCqBCEIBCEIBCEIBCEIBCEIBCEIBCEIBCEIBCEIBCEIBCEIBCEIBCEIBCEIP//Z" alt="Person">
+                <h1>Cloud Optimization
+                  Services</h1>
+                <blockquote>Deliver a secure, integrated and managed platform to orchestrate applications across multiple cloud landing zones. Optimize your cloud resources with modern tools while achieving business objectives, realizing financial savings, and decreasing operational risk.</blockquote>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<section class="contact-section" id="contact">
+    <div class="container">
+        <div class="contact-left">
+            <h2>Get In Touch</h2>
+
+            <form action="">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name">
+
+                <label for="message">Message</label>
+                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+
+                <input type="submit" class="send-message-cta" value="Send message">
+            </form>
+        </div>
+        <div class="contact-right">
+          <div class="contact">
+            <h1>Contact Us</h1>
+            <p><b>Address:</b> Near Brahma SunCity, Wadgaonsheri, Pune-411014</p>
+            <p><b>Email:</b> contact@triplecubetech.com</p>
+            <p><b>Website:</b> www.triplecubetech.com</p>
+          </div>  
+        </div>
+
+    </div>
+</section>
+    <script>
+      const mobileBtn = document.getElementById('mobile-cta')
+              nav = document.querySelector('nav')
+              mobileBtnExit = document.getElementById('mobile-exit');
+
+        mobileBtn.addEventListener('click', () => {
+            nav.classList.add('menu-btn');
+        })
+
+        mobileBtnExit.addEventListener('click', () => {
+            nav.classList.remove('menu-btn');
+        })
+    </script>
 </body>
 </html>
